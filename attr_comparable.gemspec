@@ -5,11 +5,11 @@ require "attr_comparable/version"
 Gem::Specification.new do |s|
   s.name        = "attr_comparable"
   s.version     = AttrComparable::VERSION
-  s.authors     = ["Norifumi Homma"]
-  s.email       = ["norifumi.homma@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Framgia Vietnam Co., Ltd"]
+  s.email       = ["oss@framgia.com"]
+  s.homepage    = "http://github.com/framgia/attr_comparable"
+  s.summary     = "add crass macro method to create predicate methods"
+  s.description = "add crass macro method to create predicate methods"
 
   s.rubyforge_project = "attr_comparable"
 
