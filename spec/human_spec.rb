@@ -1,7 +1,7 @@
 require File.expand_path(File.join('./', 'spec_helper.rb'), File.dirname(__FILE__))
 
 describe Human do
-  let(:human){Human.new.tap{|human| human.height=170}.tap{|human| human.weight = 70}}
+  let(:human){Human.new(170, 70)}
   it %q{Human's instance has height? method} do
     human.respond_to?(:height?).should be_true
   end
