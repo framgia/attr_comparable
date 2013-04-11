@@ -5,7 +5,7 @@ module AttrComparable
     def attr_comparable *attrs
       class_eval <<-DELIM
         attrs.each do |attr|
-          define_method(attr.to_s+'?'){|param| self.send(attr) == param }
+          define_method(attr.to_s<<'?'){|param| self.send(attr) == param }
         end
       DELIM
     end
