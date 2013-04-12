@@ -3,11 +3,9 @@ require "attr_comparable/version"
 module AttrComparable
   module ClassMethods
     def attr_comparable *attrs
-      class_eval <<-DELIM
-        attrs.each do |attr|
-          define_method(attr.to_s<<'?'){|param| self.send(attr) == param }
-        end
-      DELIM
+      attrs.each do |attr|
+        define_method("#{attr}?"){|param| self.send(attr) == param }
+      end
     end
   end
  
